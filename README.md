@@ -4,7 +4,7 @@ Public showcase of the safety architecture behind moving a live, multi-channel W
 
 ## Current milestone
 
-Version 0.1.0 documents the rollout discipline rather than the product. A set of deterministic safety guards was deployed to Production **switched off**, proven inert against live traffic, and only then raised behind independent, conversation-sticky feature flags. The consultative decision engine runs in shadow, and for a small fraction of real conversations as prompt-level and post-response guardrails. No prompt, model, pricing rule, or customer record was replaced in a single step.
+Version 0.1.1 documents the rollout discipline rather than the product. A set of deterministic safety guards was deployed to Production **switched off**, proven inert against live traffic, and only then raised behind independent, conversation-sticky feature flags. The consultative decision engine runs in shadow, and for a small fraction of real conversations as prompt-level and post-response guardrails. No prompt, model, pricing rule, or customer record was replaced in a single step.
 
 No proprietary prompt, business rule, credential, or customer data appears in this repository. It describes how the change was made safe, not what the assistant says.
 
@@ -32,6 +32,10 @@ A sales assistant that says "your order is placed" when nothing was placed is wo
 ## Selling after the sale is over
 
 The audit found the assistant continuing to pitch products after a customer had thanked it, said goodbye, or confirmed their watch had arrived — because nothing in the live path knew a purchase had happened. Purchase and delivery are now persisted as an explicit lifecycle, sourced with priority (a successful tool beats a store status beats an explicit customer message beats a text inference), and an ambiguous signal is deliberately not treated as proof. A deterministic gate reads that state before the model is prompted: past delivery, product search and sales calls-to-action are refused and the assistant is steered to acknowledgement and support, and a new sales cycle opens only on an explicit new-purchase intent. The same state revalidates every follow-up at send time, so a nudge queued before a purchase is suppressed rather than delivered after it.
+
+## A stateful guard must know whose state it is reading
+
+Every gate that remembers something — that a purchase completed, that a product was rejected — is only as safe as the identity it keys that memory on. When a request arrives without a stable channel-and-identity key, the honest answer is not to guess but to admit the conversation is anonymous. The alternative, quietly folding every unidentified visitor into one shared record, lets a single customer's confirmed delivery close the sales cycle for strangers, so the assistant describes products it then never sends. Stateful guards now require a real identity before they persist or read anything, and fail open when there isn't one: an anonymous conversation is never gated and always gets recommendations, while identified conversations keep the full lifecycle. A guard that cannot say whose past it is acting on does not act on it.
 
 ## Deciding in the open, not inside the prompt
 

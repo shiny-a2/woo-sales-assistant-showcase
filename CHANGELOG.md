@@ -4,6 +4,22 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.1.1] - 2026-08-17
+
+Conversation identity as a precondition for stateful gating.
+
+### Changed
+
+- Per-conversation state (purchase lifecycle, rejection memory) now requires a stable channel-and-identity key before it is written or read. A request that arrives without an identity is treated as anonymous rather than merged into a shared record.
+
+### Fixed
+
+- Anonymous conversations no longer collapse onto a single shared state record. A delivery confirmation on that shared record could switch the post-purchase boundary on for unrelated visitors and suppress their product recommendations — the assistant would describe products it then never sent. Stateful guards now fail open for anonymous conversations: nothing is persisted or gated for them, so they always receive recommendations, while identified conversations keep full post-purchase handling.
+
+### Tests
+
+- Regression coverage proving a degenerate conversation key persists no state and never suppresses recommendations, even with the post-purchase gate fully enabled, while an identified post-purchase conversation still gates correctly.
+
 ## [0.1.0] - 2026-08-16
 
 Initial public showcase of the staged-rollout architecture for a live,
