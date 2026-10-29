@@ -78,3 +78,7 @@ flowchart LR
 - Guards deploy inert and are proven to change no live reply before any flag is raised.
 - Publishing is treated as the one irreversible action: this repository is an allowlist of documentation, checked before every push by a fail-closed scanner that reports categories and never echoes the content it flags.
 - The private implementation, its prompts, pricing rules, credentials, and customer data remain outside this repository.
+
+## Latest update
+
+[October 30, 2026 release notes](docs/releases/2026-10-30.md).
