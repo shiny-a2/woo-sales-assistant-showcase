@@ -2,6 +2,12 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
+## Comparing a watch the customer already owns
+
+Showcase 0.2.1 covers an installed update for returning customers. After confirming a phone number in a private Telegram conversation, a customer can return to the same chat to ask about a previous purchase. Signing out or changing the linked number requires fresh verification.
+
+The assistant uses the purchased watch as the starting point for recommendations. When the model is clear, it checks for available colour variants and compares recorded case dimensions and features. When two purchases fit, it asks the customer to pick a reference. A public catalogue check on the running assistant returned three purchase links and placed a variant with a documented dial colour change first. Private-access checks passed after installation. Verification across a restart was exercised with synthetic accounts.
+
 ## Customer contact and verified personal context
 
 The installed correction separates saving a contact number from proving account ownership. A new visitor can leave a number without triggering a message or merging customer profiles. A request for personal orders, loyalty information or marketplace submissions then starts verification using that conversation's saved number. Public watch advice remains available without a number.
