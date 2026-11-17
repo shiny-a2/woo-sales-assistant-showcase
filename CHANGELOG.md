@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.1] - 2026-11-18
+
+Returning customers can use a watch from their purchase history to compare available models. Verification persists within the same private chat. The installed service produced a catalogue-backed comparison and rejected unverified requests for personal order data.
+
 ## [0.2.0] - 2026-11-17
 
 Installed verified marketplace and loyalty context; real customer message delivery remains unverified.
