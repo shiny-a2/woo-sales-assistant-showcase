@@ -2,13 +2,13 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
-## Prepared customer-recognition correction
+## Installed customer-recognition correction
 
-A channel mismatch prevented one Telegram account integration from starting verification. A related eligibility check also excluded ordinary marketplace customers. The prepared correction connects that channel to the existing verification flow while retaining staff, ambiguous-account and cross-conversation denial.
+A channel mismatch prevented one Telegram account integration from starting verification. A related eligibility check also excluded ordinary marketplace customers. The installed correction connects that channel to the existing verification flow while retaining staff, ambiguous-account and cross-conversation denial.
 
 Questions about a customer's name or number now lead to verification. Saved contact labels and previous assistant replies are not treated as confirmed names. After verification, the assistant can retrieve actual products and references from that customer's orders, including bounded searches through older orders. Seller guidance also explains background, lighting, focus and detail photos.
 
-Validation passed 55 Python tests, eight synthetic media/handoff checks and 62 isolated commerce integration checks. The actual web handlers were exercised with the Telegram integration's payload format and mocked external transports. Installation is pending approval; real message delivery and customer acceptance have not been established.
+Validation passed 55 Python tests, eight synthetic media/handoff checks and 62 isolated commerce integration checks. The actual web handlers were exercised with the Telegram integration's payload format and mocked external transports. The approved correction is installed. Running files, service health, the actual Telegram verification start/cancel path and access-denial boundaries were checked without real sends. Accounts with additional staff capabilities remain protected by the existing restriction; a separate opt-in proposal has not been enabled. Real SMS delivery and customer acceptance remain unverified.
 
 ## Current milestone
 
