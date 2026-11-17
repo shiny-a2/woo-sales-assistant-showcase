@@ -25,6 +25,7 @@ APPROVED_PATHS = frozenset(
     {
         ".gitignore",
         "CHANGELOG.md",
+        "docs/releases/2026-10-30.md",
         "README.md",
         "VERSION",
         "scripts/check_public_safety.py",
@@ -34,7 +35,7 @@ APPROVED_PATHS = frozenset(
 )
 
 MAX_FILE_BYTES = 256 * 1024
-EXPECTED_VERSION = "0.1.1"
+EXPECTED_VERSION = "0.2.0"
 
 SECRET_PATTERNS: Tuple[Tuple[str, "re.Pattern[bytes]"], ...] = (
     ("private-key", re.compile(rb"-----BEGIN (?:[A-Z0-9 ]+ )?PRIVATE KEY-----")),
@@ -153,7 +154,7 @@ def main() -> int:
 
         relative = path.relative_to(ROOT).as_posix()
 
-        if relative.startswith(".git/") or "__pycache__" in relative:
+        if relative == ".git" or relative.startswith(".git/") or "__pycache__" in relative:
             continue
 
         seen.add(relative)

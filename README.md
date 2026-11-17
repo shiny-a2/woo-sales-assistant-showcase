@@ -4,7 +4,19 @@ Public showcase of the safety architecture behind moving a live, multi-channel W
 
 ## Current milestone
 
-Version 0.1.1 documents the rollout discipline rather than the product. A set of deterministic safety guards was deployed to Production **switched off**, proven inert against live traffic, and only then raised behind independent, conversation-sticky feature flags. The consultative decision engine runs in shadow, and for a small fraction of real conversations as prompt-level and post-response guardrails. No prompt, model, pricing rule, or customer record was replaced in a single step.
+Version 0.2.0 documents a prepared upgrade for verified customer context. A customer can ask about a marketplace submission or loyalty account, verify access to their mobile number, and receive facts from the store's existing systems. A number mentioned in a conversation cannot select a private customer record. Deployment and real message delivery checks remain pending; the checks below used isolated fixtures.
+
+Verification runs before the language model, conversation history and human handoff. Codes and access proofs are excluded from those paths. Personal access is tied to the verified conversation and expires. Anonymous web conversations continue to use the account portal for private information until a trusted web-session binding exists.
+
+Marketplace drafts, submitted reviews, publication and physical authenticity remain separate facts. Loyalty points, wallet credit and tier progress also remain separate, so a sales reply cannot imply that points advance a purchase-based tier. Internal staff notes and other customers' records are excluded. Dated, minimal commerce snapshots can support existing management profiles without becoming a new financial authority or silently merging conflicting accounts.
+
+The upgrade also fixes profile synchronization acknowledgement: a failed or partial batch no longer advances the export cursor and silently drops records. Retries retain the last confirmed position.
+
+Validation covers Python unit and media/handoff regressions, plus isolated commerce/identity integration checks. The identity component also passed static analysis, foundation and channel checks, and packaging gates. Concurrent requests, replay, account ambiguity, cross-customer denial and failed writes were exercised. These results do not establish live provider delivery or every external channel's end-to-end behavior.
+
+## Previous deployed milestone
+
+Version 0.1.1 documented rollout discipline. A set of deterministic safety guards was deployed to Production **switched off**, proven inert against live traffic, and only then raised behind independent, conversation-sticky feature flags. The consultative decision engine ran in shadow, and for a small fraction of real conversations as prompt-level and post-response guardrails. No prompt, model, pricing rule, or customer record was replaced in a single step.
 
 No proprietary prompt, business rule, credential, or customer data appears in this repository. It describes how the change was made safe, not what the assistant says.
 
