@@ -4,7 +4,9 @@ Public showcase of the safety architecture behind moving a live, multi-channel W
 
 ## Comparing a watch the customer already owns
 
-Showcase 0.2.1 covers an installed update for returning customers. After confirming a phone number in a private Telegram conversation, a customer can return to the same chat to ask about a previous purchase. Signing out or changing the linked number requires fresh verification.
+Showcase 0.2.2 documents a correction to the feature comparison. In a live request for a different dial colour, the first recommendation came from the same model family. The reply identified a date display on both watches, luminous hands in one listing and a countdown timer in the other. Each claim came from the corresponding catalogue entry.
+
+After confirming a phone number in a private Telegram conversation, a customer can return to the same chat to ask about a previous purchase. Signing out or changing the linked number requires fresh verification.
 
 The assistant uses the purchased watch as the starting point for recommendations. When the model is clear, it checks for available colour variants and compares recorded case dimensions and features. When two purchases fit, it asks the customer to pick a reference. A public catalogue check on the running assistant returned three purchase links and placed a variant with a documented dial colour change first. Private-access checks passed after installation. Verification across a restart was exercised with synthetic accounts.
 
