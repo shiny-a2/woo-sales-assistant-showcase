@@ -16,11 +16,11 @@ A follow-up correction separates confirmed purchases from failed checkout attemp
 
 The correction passed 62 assistant tests, eight media/handoff checks, 81 isolated commerce checks and six connector delivery tests. A read-only candidate evaluation verified the corrected sources. The approved correction is installed. Exact runtime files, service health, private-access denial, connector startup and dashboard authentication were verified. Real customer delivery remains an acceptance boundary. No real customer message was sent for testing.
 
-## Prepared seller-registration next step
+## Seller registration without a retail-price detour
 
-A prepared correction helps marketplace sellers continue when they do not know a watch's new retail price. It explains the form's proposed sale price and subsequent expert review, supplies the registration link and gives a concise photography reminder. Recent conversation context handles short follow-ups without turning buyer-price or repair questions into seller registration. Private account verification remains separate.
+The installed correction helps marketplace sellers continue when they do not know a watch's new retail price. It explains the form's proposed sale price and subsequent expert review, supplies the registration link and gives a concise photography reminder. Recent conversation context handles short follow-ups without turning buyer-price or repair questions into seller registration. Private account verification remains separate.
 
-Sixty-nine isolated checks and eight media/handoff checks passed, including native and account/web entry points with mocked external boundaries. This correction is prepared but not installed; no real customer message, model call or financial record was created for testing.
+Seventy isolated checks and eight media/handoff checks passed, including native and account/web entry points with mocked external boundaries. Approved installation is complete. Exact runtime files, service health, seller follow-up responses and private-access boundaries were verified using internal requests. Complete real-customer delivery remains untested; no real customer message, model call or financial record was created for testing.
 
 ## Current milestone
 
