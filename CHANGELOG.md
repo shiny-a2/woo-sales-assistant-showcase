@@ -6,13 +6,13 @@ prompts, credentials, or customer data.
 
 ## [0.2.0] - 2026-11-17
 
-Prepared verified marketplace and loyalty context; production activation remains pending.
+Installed verified marketplace and loyalty context; real customer message delivery remains unverified.
 
 - Private customer reads require conversation-bound mobile verification; codes and access proofs stay outside model and profile context.
 - Existing marketplace and loyalty producers supply customer facts, with distinct submission, publication, authenticity, points, wallet and tier states.
 - Minimal verified commerce snapshots support management profiles without silently merging conflicting accounts.
 - Failed or incomplete synchronization acknowledgements preserve the export cursor for retry.
-- Local Python regressions, isolated commerce/identity integration, static analysis and packaging gates passed. Live provider delivery remains unverified.
+- Local Python regressions, isolated commerce/identity integration, static analysis and packaging gates passed. Installed files, service health and live authentication boundaries were checked without sending customer messages.
 
 ## [0.1.1] - 2026-08-17
 

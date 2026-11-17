@@ -4,7 +4,7 @@ Public showcase of the safety architecture behind moving a live, multi-channel W
 
 ## Current milestone
 
-Version 0.2.0 documents a prepared upgrade for verified customer context. A customer can ask about a marketplace submission or loyalty account, verify access to their mobile number, and receive facts from the store's existing systems. A number mentioned in a conversation cannot select a private customer record. Deployment and real message delivery checks remain pending; the checks below used isolated fixtures.
+Version 0.2.0 documents an installed upgrade for verified customer context. A customer can ask about a marketplace submission or loyalty account, verify access to their mobile number, and receive facts from the store's existing systems. A number mentioned in a conversation cannot select a private customer record. Installed files, service health and live authentication boundaries were checked; real customer message delivery remains unverified.
 
 Verification runs before the language model, conversation history and human handoff. Codes and access proofs are excluded from those paths. Personal access is tied to the verified conversation and expires. Anonymous web conversations continue to use the account portal for private information until a trusted web-session binding exists.
 
@@ -12,7 +12,7 @@ Marketplace drafts, submitted reviews, publication and physical authenticity rem
 
 The upgrade also fixes profile synchronization acknowledgement: a failed or partial batch no longer advances the export cursor and silently drops records. Retries retain the last confirmed position.
 
-Validation covers Python unit and media/handoff regressions, plus isolated commerce/identity integration checks. The identity component also passed static analysis, foundation and channel checks, and packaging gates. Concurrent requests, replay, account ambiguity, cross-customer denial and failed writes were exercised. These results do not establish live provider delivery or every external channel's end-to-end behavior.
+Validation passed 41 Python unit/regression tests, eight media/handoff checks and 40 isolated commerce/identity integration checks. The identity component also passed static analysis, foundation and channel checks, packaging gates and its hosted security workflow. Concurrent requests, replay, account ambiguity, cross-customer denial and failed writes were exercised. Live start/cancel, private-access denial and anonymous web boundaries passed without sending customer messages. These results do not establish live provider delivery or every external channel's end-to-end behavior.
 
 ## Previous deployed milestone
 
