@@ -10,11 +10,11 @@ The same customer flow applies when an account also has operational roles: verif
 
 Validation passed 59 Python tests, eight synthetic media/handoff checks and 69 isolated commerce integration checks. The web handlers were exercised with the Telegram integration's payload format and mocked external transports. Tests cover persistent unverified contacts, no message on contact capture, unchanged permissions, no login session and cross-account denial. Runtime files and service health were verified after installation. Real SMS delivery and the complete customer conversation remain owner-initiated acceptance checks; no real customer message was sent for testing.
 
-## Prepared purchase-history and reply correction
+## Confirmed purchase history and completed replies
 
 A follow-up correction separates confirmed purchases from failed checkout attempts and includes counter invoices linked to the verified customer. Responses identify the source, date, recorded status and watch reference. Explicit failed-order tracking remains available. The Telegram connector also stops sending keyword-triggered product announcements before the assistant has completed its work; empty or cancelled requests leave no placeholder.
 
-The candidate passed 62 assistant tests, eight media/handoff checks, 81 isolated commerce checks and six connector delivery tests. A read-only candidate evaluation verified the corrected sources. This follow-up is prepared, not installed; deployment and the connector restart await approval. No real customer message was sent for testing.
+The correction passed 62 assistant tests, eight media/handoff checks, 81 isolated commerce checks and six connector delivery tests. A read-only candidate evaluation verified the corrected sources. The approved correction is installed. Exact runtime files, service health, private-access denial, connector startup and dashboard authentication were verified. Real customer delivery remains an acceptance boundary. No real customer message was sent for testing.
 
 ## Current milestone
 
