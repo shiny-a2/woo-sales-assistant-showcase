@@ -2,6 +2,14 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
+## Customer contact and verified personal context
+
+The installed correction separates saving a contact number from proving account ownership. A new visitor can leave a number without triggering a message or merging customer profiles. A request for personal orders, loyalty information or marketplace submissions then starts verification using that conversation's saved number. Public watch advice remains available without a number.
+
+The same customer flow applies when an account also has operational roles: verification grants only its own customer information, never an administrative login or another customer's records. Saved labels and previous assistant replies are not confirmed names. Verified order answers include actual products, brands and references, with bounded searches through older orders. Seller guidance explains background, lighting, focus and detail photos.
+
+Validation passed 59 Python tests, eight synthetic media/handoff checks and 69 isolated commerce integration checks. The web handlers were exercised with the Telegram integration's payload format and mocked external transports. Tests cover persistent unverified contacts, no message on contact capture, unchanged permissions, no login session and cross-account denial. Runtime files and service health were verified after installation. Real SMS delivery and the complete customer conversation remain owner-initiated acceptance checks; no real customer message was sent for testing.
+
 ## Current milestone
 
 Version 0.2.0 documents an installed upgrade for verified customer context. A customer can ask about a marketplace submission or loyalty account, verify access to their mobile number, and receive facts from the store's existing systems. A number mentioned in a conversation cannot select a private customer record. Installed files, service health and live authentication boundaries were checked; real customer message delivery remains unverified.
