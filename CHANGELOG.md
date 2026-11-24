@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.3] - 2026-11-24
+
+Shoppers can ask in Persian for a watch with a particular dial, strap or case colour, a recorded audience, and a range of case diameters. The assistant keeps these constraints together and asks which to change when the catalogue has no exact match. Checks used real catalogue attributes and included requests with no matching watch.
+
 ## [0.2.2] - 2026-11-18
 
 Watch comparisons now include functions recorded under the store’s additional-functions and calendar attributes. A live request returned three available alternatives and showed a documented shared feature for each. The release passed 88 assistant checks and eight media checks.
