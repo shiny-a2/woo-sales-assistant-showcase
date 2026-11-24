@@ -6,7 +6,7 @@ prompts, credentials, or customer data.
 
 ## [0.2.13] - 2026-11-25
 
-A live business inbox issue left a new private message unanswered when its assistant call failed. The listener now retries the current message after a transient failure and stops after a bounded number of attempts. It preserves operator pauses and avoids a second send after an uncertain delivery. Browser tests cover recovery. A real customer delivery remains to be verified.
+A live business inbox issue left a new private message unanswered. The sales service now bounds response time and hands slow requests to an operator. The browser records only a safe failure stage, rechecks the selected conversation and latest message before sending, and never repeats an uncertain submission. Chromium tests cover the recovery paths. The recipient confirmed that a live reply arrived. An operator can now record receipt and resume that conversation without sending the prior reply again.
 
 ## [0.2.12] - 2026-11-25
 
