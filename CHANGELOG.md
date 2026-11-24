@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.5] - 2026-11-24
+
+The business inbox pilot recognizes the header and list that the web application displays for conversations. A Chromium test exercised visible navigation, hidden controls, a sign-in page and a different site. The status report contains a screen category and navigation indicators. Six browser and control tests passed.
+
 ## [0.2.4] - 2026-11-24
 
 When the assistant presents watches, it can point out a documented difference in movement or identify the least expensive option when every displayed price is known. Follow-up replies stay with the shopper’s question. Conversation, watch comparison, account verification, marketplace and media tests exercised these paths.
