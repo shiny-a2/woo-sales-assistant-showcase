@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.9] - 2026-11-24
+
+The catalogue now saves a complete, replaceable snapshot in the background. A slow write can no longer occupy the same event loop that serves conversations. Tests deliberately held up the writer while the event loop serviced another task and checked that a failed write left the previous catalogue readable.
+
 ## [0.2.8] - 2026-11-24
 
 A message from the business account switches automated sales replies for a single private conversation. The assistant can include product links and leave the conversation with an operator. Browser tests covered the route from a simulated inbound message to a matching outgoing echo, recipient mismatch, copied commands and restart recovery. Real customer messages were excluded from these tests.
