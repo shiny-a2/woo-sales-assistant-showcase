@@ -35,7 +35,7 @@ APPROVED_PATHS = frozenset(
 )
 
 MAX_FILE_BYTES = 256 * 1024
-EXPECTED_VERSION = "0.2.2"
+EXPECTED_VERSION = "0.2.4"
 
 SECRET_PATTERNS: Tuple[Tuple[str, "re.Pattern[bytes]"], ...] = (
     ("private-key", re.compile(rb"-----BEGIN (?:[A-Z0-9 ]+ )?PRIVATE KEY-----")),

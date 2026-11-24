@@ -4,6 +4,12 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.4] - 2026-11-24
+
+When the assistant presents watches, it can point out a documented difference in movement or identify the least expensive option when every displayed price is known. Follow-up replies stay with the shopper’s question. Conversation, watch comparison, account verification, marketplace and media tests exercised these paths.
+
+A separate business inbox pilot kept its browser running between two disconnected operator sessions. Account sign-in and customer reply delivery are still pending verification.
+
 ## [0.2.3] - 2026-11-24
 
 Shoppers can ask in Persian for a watch with a particular dial, strap or case colour, a recorded audience, and a range of case diameters. The assistant keeps these constraints together and asks which to change when the catalogue has no exact match. Checks used real catalogue attributes and included requests with no matching watch.
