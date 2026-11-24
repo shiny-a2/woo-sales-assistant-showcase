@@ -2,7 +2,7 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
-Showcase 0.2.5 documents the business inbox check. It looks for visible conversation navigation after sign-in. The operator can check the result without opening a conversation or reading message text.
+Showcase 0.2.6 covers the business inbox after sign-in. The operator can open the conversations overview and check whether the list is visible while leaving individual conversations closed.
 
 ## Comparing a watch the customer already owns
 
