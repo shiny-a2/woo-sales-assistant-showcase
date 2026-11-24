@@ -2,7 +2,7 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
-Showcase 0.2.7 covers watch comparisons that retain the requested reference, colour, size and functions across follow-up questions. The business inbox can also confirm that a signed-in operator can see the conversations list.
+Showcase 0.2.8 covers operator-controlled customer conversations in the business inbox. Operators can enable sales assistance for a single customer and take the conversation back in the same chat.
 
 ## Comparing a watch the customer already owns
 
