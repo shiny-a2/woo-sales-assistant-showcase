@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.12] - 2026-11-25
+
+A catalogue refresh builds its lookup of previous products once. New pages keep their display order and older products remain searchable until the refresh finishes. Contact paging and startup checks request only the count or existence they need. Regression tests covered these queries and catalogue visibility during the refresh.
+
 ## [0.2.11] - 2026-11-25
 
 The business inbox answers new private messages by default. An operator can pause or resume a single conversation. The upgrade respects earlier pauses and handoffs. Browser tests covered the first incoming message, operator controls, the upgrade boundary and restart recovery.
