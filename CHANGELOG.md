@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.13] - 2026-11-25
+
+A live business inbox issue left a new private message unanswered when its assistant call failed. The listener now retries the current message after a transient failure and stops after a bounded number of attempts. It preserves operator pauses and avoids a second send after an uncertain delivery. Browser tests cover recovery. A real customer delivery remains to be verified.
+
 ## [0.2.12] - 2026-11-25
 
 A catalogue refresh builds its lookup of previous products once. New pages keep their display order and older products remain searchable until the refresh finishes. Contact paging and startup checks request only the count or existence they need. Regression tests covered these queries and catalogue visibility during the refresh.
