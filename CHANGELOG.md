@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.14] - 2026-11-25
+
+The inbox checks the active conversation again when a sales reply is ready. Each incoming message starts with its own error history. An operator can retry one matching request that stopped before submission. Local browser and state tests cover delayed conversation rows, message matching and duplicate prevention.
+
 ## [0.2.13] - 2026-11-25
 
 A live business inbox issue left a new private message unanswered. The sales service now bounds response time and hands slow requests to an operator. The browser records only a safe failure stage, rechecks the selected conversation and latest message before sending, and never repeats an uncertain submission. Chromium tests cover the recovery paths. The recipient confirmed that a live reply arrived. An operator can now record receipt and resume that conversation without sending the prior reply again.
