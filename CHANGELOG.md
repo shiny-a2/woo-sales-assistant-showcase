@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.6] - 2026-11-24
+
+The inbox check now opens the service’s conversations overview from a signed-in account. It distinguishes the account menu, the conversations section and the list itself. The business account remained signed in when its browser reopened. A separate operator connection confirmed visible conversation tabs and list rows. The check left individual conversations closed. Seven browser and control tests passed, including tests for a fresh login prompt and repeated checks in the same browser.
+
 ## [0.2.5] - 2026-11-24
 
 The business inbox pilot recognizes the header and list that the web application displays for conversations. A Chromium test exercised visible navigation, hidden controls, a sign-in page and a different site. The status report contains a screen category and navigation indicators. Six browser and control tests passed.
