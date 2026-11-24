@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.10] - 2026-11-24
+
+New catalogue pages become searchable as they arrive. When a full refresh is underway, a compact restart marker records that work is unfinished. Intermediate snapshots are spaced apart and the completed catalogue is saved at the end. Tests verified the retained marker, complete results and one full write for a short multi-page refresh.
+
 ## [0.2.9] - 2026-11-24
 
 The catalogue now saves a complete, replaceable snapshot in the background. A slow write can no longer occupy the same event loop that serves conversations. Tests deliberately held up the writer while the event loop serviced another task and checked that a failed write left the previous catalogue readable.
