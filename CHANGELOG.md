@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.11] - 2026-11-25
+
+The business inbox answers new private messages by default. An operator can pause or resume a single conversation. The upgrade respects earlier pauses and handoffs. Browser tests covered the first incoming message, operator controls, the upgrade boundary and restart recovery.
+
 ## [0.2.10] - 2026-11-24
 
 New catalogue pages become searchable as they arrive. When a full refresh is underway, a compact restart marker records that work is unfinished. Intermediate snapshots are spaced apart and the completed catalogue is saved at the end. Tests verified the retained marker, complete results and one full write for a short multi-page refresh.

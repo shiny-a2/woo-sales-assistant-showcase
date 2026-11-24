@@ -2,7 +2,7 @@
 
 Public showcase of the safety architecture behind moving a live, multi-channel WooCommerce sales assistant from a single prompt-driven model toward a deterministic, auditable sales-decision engine — without a big-bang change to a system that is already holding real customer conversations across the web and messaging channels.
 
-Showcase 0.2.10 covers business inbox replies and background catalogue checkpoints. Operators can enable or pause assistance for each customer.
+Showcase 0.2.11 covers automatic replies to new private customer messages. The operator can pause or resume one conversation from the business account.
 
 ## Comparing a watch the customer already owns
 
