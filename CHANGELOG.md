@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.13] - 2026-11-25
+
+A live business inbox issue left a new private message unanswered. The sales service now bounds response time and hands slow requests to an operator. The browser records only a safe failure stage, rechecks the selected conversation and latest message before sending, and never repeats an uncertain submission. Chromium tests cover the recovery paths. The recipient confirmed that a live reply arrived. An operator can now record receipt and resume that conversation without sending the prior reply again.
+
 ## [0.2.12] - 2026-11-25
 
 A catalogue refresh builds its lookup of previous products once. New pages keep their display order and older products remain searchable until the refresh finishes. Contact paging and startup checks request only the count or existence they need. Regression tests covered these queries and catalogue visibility during the refresh.
