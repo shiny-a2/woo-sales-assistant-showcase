@@ -4,6 +4,10 @@ All notable changes to this public showcase are documented here. The showcase
 describes the safety architecture of a private system; it contains no source,
 prompts, credentials, or customer data.
 
+## [0.2.7] - 2026-11-24
+
+The shopping assistant keeps an explicit watch reference and the shopper’s stated criteria when comparing alternatives. A short follow-up can call out a known difference in movement or price. Seventy regression tests covered conversation, filters and identity. The running service reported the new release after restart.
+
 ## [0.2.6] - 2026-11-24
 
 The inbox check now opens the service’s conversations overview from a signed-in account. It distinguishes the account menu, the conversations section and the list itself. The business account remained signed in when its browser reopened. A separate operator connection confirmed visible conversation tabs and list rows. The check left individual conversations closed. Seven browser and control tests passed, including tests for a fresh login prompt and repeated checks in the same browser.
